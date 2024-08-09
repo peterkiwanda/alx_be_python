@@ -18,7 +18,7 @@ def main():
             break
         print("Invalid input. Please enter 'yes' or 'no'.")
 
-    # Provide customized reminder based on priority and time sensitivity
+    # Process the task based on priority
     match priority:
         case "high":
             reminder = f"High priority task: {task}"
@@ -33,9 +33,5 @@ def main():
     if time_bound == "yes":
         reminder += " — This requires immediate attention today!"
 
-    # Print the reminder
+    # Print the customized reminder
     print(reminder)
-
-if __name__ == "__main__":
-    main()
-
