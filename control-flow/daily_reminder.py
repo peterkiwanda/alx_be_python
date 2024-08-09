@@ -33,8 +33,8 @@ def main():
     if time_bound == "yes":
         reminder += " — This requires immediate attention today!"
 
-    # Print the customized reminder
-    print(reminder)
+    # Print the customized reminder with "Reminder:" prefix
+    print(f"Reminder: {reminder}")
 
 if __name__ == "__main__":
     main()
