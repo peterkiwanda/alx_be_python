@@ -2,7 +2,7 @@ def display_menu():
     """
     Displays the menu options for the Shopping List Manager.
     """
-    print("\nShopping List Manager")
+    print("Shopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
@@ -36,19 +36,6 @@ def main():
         elif choice == '3':
             # Display the shopping list
             if shopping_list:
-                print("\nCurrent Shopping List:")
+                print("Current Shopping List:")
                 for index, item in enumerate(shopping_list, start=1):
-                    print(f"{index}. {item}")
-            else:
-                print("The shopping list is empty.")
-
-        elif choice == '4':
-            print("Goodbye!")
-            break
-
-        else:
-            print("Invalid choice. Please try again.")
-
-if __name__ == "__main__":
-    main()
-
+    
