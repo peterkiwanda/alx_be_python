@@ -2,18 +2,18 @@
 
 def main():
     # Prompt for a single task
-    task = input("Enter the task description: ").strip()
+    task = input("Enter your task: ").strip()
     
     # Prompt for the task's priority
     while True:
-        priority = input("Enter the priority level (high, medium, low): ").strip().lower()
+        priority = input("Priority (high/medium/low): ").strip().lower()
         if priority in {"high", "medium", "low"}:
             break
         print("Invalid priority. Please enter 'high', 'medium', or 'low'.")
 
     # Prompt for time sensitivity
     while True:
-        time_bound = input("Is this task time-bound? (yes or no): ").strip().lower()
+        time_bound = input("Is it time-bound? (yes/no): ").strip().lower()
         if time_bound in {"yes", "no"}:
             break
         print("Invalid input. Please enter 'yes' or 'no'.")
@@ -35,3 +35,6 @@ def main():
 
     # Print the customized reminder
     print(reminder)
+
+if __name__ == "__main__":
+    main()
