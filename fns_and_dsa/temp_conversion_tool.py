@@ -1,16 +1,16 @@
 # temp_conversion_tool.py
 
 # Define_fahrenheit_to_celsius
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
+FAHRENHEIT_TO_CELSIUS = 5 / 9
 
 # define_celsius_to_fahrenheit
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
+CELSIUS_TO_FAHRENHEIT = 9 / 5
 
 # define_freezing_point_fahrenheit
 FREEZING_POINT_FAHRENHEIT = 32
 
 def celsius_to_fahrenheit(celsius):
-    return celsius * CELSIUS_TO_FAHRENHEIT_FACTOR + FREEZING_POINT_FAHRENHEIT
+    return celsius * CELSIUS_TO_FAHRENHEIT + FREEZING_POINT_FAHRENHEIT
 
 def fahrenheit_to_celsius(fahrenheit):
     return (fahrenheit - 32) * 5 / 9
